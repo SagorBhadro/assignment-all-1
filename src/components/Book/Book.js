@@ -9,7 +9,7 @@ const Book = () => {
   const [checkOut, setCheckOut] = useState([])
   console.log(checkOut.length)
   useEffect(() => {
-    fetch('http://localhost:3001/products')
+    fetch('https://pacific-dawn-81943.herokuapp.com/products')
     .then(res => res.json())
     .then(data => setCheckOut(data))
   }, [])

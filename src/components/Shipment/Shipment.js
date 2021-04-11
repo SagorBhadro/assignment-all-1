@@ -10,7 +10,7 @@ const Shipment = () => {
       const orderDetails = {...loggedInUser, shipment:data, orderTime: new Date()};
 
 
-      fetch('http://localhost:3001/addOrder',{
+      fetch('https://pacific-dawn-81943.herokuapp.com/addOrder',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

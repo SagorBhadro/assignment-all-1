@@ -15,7 +15,7 @@ const Admin = () => {
       price: data.price,
       imageURL: imageURL
     }
-    const url = `http://localhost:3001/addProducts`
+    const url = `https://pacific-dawn-81943.herokuapp.com/addProducts`
 
 
     fetch(url, {

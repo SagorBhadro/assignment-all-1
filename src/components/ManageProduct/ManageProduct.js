@@ -5,13 +5,13 @@ const ManageProduct = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/products')
+    fetch('https://pacific-dawn-81943.herokuapp.com/products')
       .then(res => res.json())
       .then(data => setProducts(data))
   }, [])
 
   const deleteProduct = (id) =>{
-    fetch(`http://localhost:3001/delete/${id}`,{
+    fetch(`https://pacific-dawn-81943.herokuapp.com/delete/${id}`,{
       method:'DELETE'
     })
       .then(res => res.json())
